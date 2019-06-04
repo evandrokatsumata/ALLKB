@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AnyKB</title>
+</head>
+<body>
+
+  <style>
+    
+  </style>
+
+  <input type="file" id="filechoice" />
+  <pre id="contents"></pre>
+  
+  <script>
+
+    function populatePre(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            document.getElementById('contents').textContent = this.responseText;
+        };
+        xhr.open('GET', url);
+        xhr.send();
+    }
+    populatePre('Problemas pacheco.txt');
+
+    document
+    .getElementById('filechoice')
+    .addEventListener(
+        'change',
+        function () {
+            var fr = new FileReader();
+            fr.onload = function () {
+                document.getElementById('contents').textContent = this.result;
+            };
+            fr.readAsText(this.files[0]);
+        }
+    );
+  </script>
+
+</body>
+</html>

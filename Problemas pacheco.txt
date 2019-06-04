@@ -1,0 +1,388 @@
+Util {
+
+INFORMAÇÕES {
+
+USER AVAYA: 7963013
+ 
+AUXWORK –  8 – ADMIN 
+AUXWORK –  5 – CONFORT 
+AUXWORK -  1 – PAUSA 10 
+AUXWORK –  2 – PAUSA 20 
+AUXWORK –  4 – CALLBACK – ANTES DE PUXAR A LINHA PARA LIGAR E TRATAR OFFLINE.  
+    
+CÓDIGO DO WEBTIME: 2177063
+    
+• TELAO - HTTP://COBOG-MSC-H01.LAC.UIS.UNISYS.COM/WALLBOARD/CGR0701/DISPLAY.HTML?
+• ADP WEB - CONSULTA HOLERITE: HTTPS://WWW.ADPWEB.COM.BR/RHWEB20/ 
+• NICE - CONSULTA DE ESCALA: HTTP://HCEAN1496-GMS/WEB/GUEST
+• VEGAS - CONSULTA DE MÉTRICAS: HTTP://INRGA-VISNETIC/VEGAS/ 
+• DPSP - PORTAL DE CHAMADOS:  HTTP://DPSPQA.SERVICE-NOW.COM/SP
+• SERVICE-NOW - CONTROLE DE CHAMADOS:  HTTP://DPSPQA.SERVICE-NOW.COM
+• SHAREPOINT_DPSP - TREINAMENTOS E ARQUIVOS DE PACHECO: HTTPS://UNISYSCORP.SHAREPOINT.COM/TEAMS/6440364/DPSP/DEFAULT.ASPX?E=1%3ABE2988F8125A4AEDBB2B8FD1400243B1
+}
+    
+ATENDIMENTO {
+    
+SAUDAÇÃO
+OBRIGADO (A), POR LIGAR PARA O SERVICE DESK AGILIZA, MEU NOME É Evandro BOM DIA / BOA TARDE / BOA NOITE, COM QUEM EU FALO POR GENTILEZA?
+    
+FINALIZAÇÃO DE ATENDIMENTO:
+    
+First Call Fix (FCF)Orientação para encerramento do chamado(COM validação de solução): 
+Informo que o seu chamado será encerrado, já que a solução foi aplicada com sucesso. Você poderia anotar o número do chamado? 
+OBS: Você poderá receber um e-mail para avaliar o atendimento prestado pelo Service Desk. É importante a sua participação para que possamos melhorar nosso atendimento.  
+    
+Referral(Orientação em casos de direcionamento para outro grupo resolvedor):
+- O chamado será direcionado à equipe responsável. Você pode anotar o número do chamado?
+- Você poderá receber um e-mail para avaliar o atendimento prestado pelo grupo que resolverá sua dificuldade. 
+- É importante a sua participação para que possamos melhorar a prestação de nossos serviços. 
+     
+TERMOS A UTILIZAR
+    
+- Quando o user não informar o problema: Em que posso Ajudar? 
+- Acesso remoto   : Estou encaminhando a solicitação do acesso remoto ao seu equipamento, por gentileza confirme o acesso e conceda o controle. 
+- Espera normal   : Um momento por gentileza, *enquanto eu (explicar o motivo da espera). 
+- Espera adicional: Um momento por gentileza, *enquanto eu (explicar o motivo da espera). 
+- Retorno de Espera : Obrigado por aguardar
+- 
+}
+ 
+Util CÓDIGOS DE PAUSA{
+
+01 – Break                                  pausa 10 min
+02 – Lunch                                  pausa 20 min
+03 – Training                               somente sob autorização
+04 – Outbound                               para fazer call back
+05 – Comfort break                          banheiro (usem as pausas programadas para ir ao banheiro, não exagerem em Comfort, bom senso)
+06 – Mentor                                 somente sob autorização
+07 – Project                                somente sob autorização
+08 – Admin                                  para tratativa offline (e-mail, Web, etc)
+09 – Meeting                                somente sob autorização
+}
+
+Util SIGNIFICADO COBOG DISPLAYS{
+"INQ:" mostra a quantidade de pessoas que estão esperando na linha para ser atendido.
+"OCW:" mostra em tempo real, há quanto tempo estão esperando na linha para ser atendido.
+"AGT:" mostra quantos agentes estão disponíveis no momento para aquela skill.
+"GOS:" mostra a porcentagem de ligações atendidas pela equipe do Service Desk.
+"ANS:" mostra a quantidade de ligações que foram recebidas no Service Desk naquele dia.
+"ABR:" mostra em porcentagem, qual foi a quantidade de ligações abandonadas na espera de atendimento.
+"ASA:" mostra em segundos, a média do tempo de espera na URA de todas as ligações atendidas daquela skill no dia todo, por toda a equipe.
+}
+
+}
+
+/* PROBLEMAS COMUNS */
+TI{
+
+Telefonia fixa - Não Efetua/Recebe Ligações KB0010005{
+Caso a loja esteja com problemas para fazer/receber ligações analógicas (telefone fixo), 
+o gerente da loja deve entrar em contato diretamente com a empresa fornecedora da linha telefônica da região. 
+Se ainda assim o problema não for resolvido, a GGL (gerente de loja) deve encaminhar e-mail para raquel.zillig@dpsp.com.br reportando o ocorrido.
+
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=85593cc4db3e23c09bbecf24149619bb
+}
+
+Convênios e PBMs - Problemas na utilização KB0010039{
+Caso esteja enfrentando problema com um único produto e com convênio especifico, é necessário acionar o time de convênios via e-mail.
+Problemas relacionados à PBM Indústria, ou seja, programas de descontos de laboratórios (Cuidados Pela Vida/Ache, Vale Mais Saúde/Novartis,
+Viver+/GSK), normalmente via autorizador Portal da Drogaria ou Funcional entrar em contato com Lucas Batista (lucas.batista@dpsp.com.br).
+Problemas ligados a Convênios (planos de saúde) ou PBM Corporativo (descontos de empresas), que passam pelos autorizadores Vidalink, 
+Fidelize e Orizon, acionar o Cristiano Santos (cristiano.santos@dpsp.com.br).
+
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=fc12709fdb0cbb80afa709a0ba9619ed
+}
+
+Farmácia Popular - Cadastro de funcionários para emissão de autorização {
+Cadastrar CPF de funcionários para emitir autorizações de Farmácia Popular: Acionar o time de varejo.
+Em caso de dúvidas para acioná-los, favor consultar a intranet.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=6b7eb897db40fb80afa709a0ba961906
+}
+
+Como monitorar meus chamados no Portal {
+    https://dpsp.service-now.com/sp?id=kb_article&sys_id=3b62a38cdbf47780afa709a0ba96199a
+}
+
+Webmail - Caixa de entrada cheia KB0010004{
+Caso a caixa de entrada do webmail da loja esteja cheia, é necessário deletar os emails mais antigos e/ou de menor importâncias,
+ pois não há possibilidade de aumentar o espaço de armazenamento do email corporativo da loja.
+
+ https://dpsp.service-now.com/sp?id=kb_article&sys_id=94183484db3e23c09bbecf241496194c
+}
+
+Portal Pfizer - Informações para acesso KB0010038{
+O acesso ao Portal Pfizer é feito através do portal da Intranet.
+O time de Varejo é o responsável por fornecer o login e senha de acesso, portanto, caso precise da criação de usuário, reset de senha e afins, acione-o.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=6bafa8dfdbc8bb80afa709a0ba961932
+}
+
+Telefonia fixa - Não Efetua/Recebe Ligações KB0010005{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=85593cc4db3e23c09bbecf24149619bb
+}
+
+Telefonia fixa - Problemas físicos KB0010018{
+Para problemas físicos com o aparelho de telefone analógico (telefone fixo), o gerente deve efetuar a solicitação de um novo através do People Soft
+(BR Supply), em "Uso e consumo" e fazer pedido do periférico.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=85935369dbfe27c09bbecf2414961963
+}
+
+SEMC - Problemas com cadastro de medicamentos KB0010068{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=77b3922edb2cb700afa709a0ba96199e
+}
+
+SEMC - Problemas com acesso/senha KB0010044{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=92fdb867db8cff80afa709a0ba96197b
+}
+
+Intranet - Dúvida operacional KB0010017{
+Está com alguma dúvida ao navegar na página da Intranet de sua empresa? 
+Contate o seu Gerente de Grupo de Loja (GGL) para maiores instruções e informações
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=957c6aaddb7e27c09bbecf24149619af
+}
+
+Impressora multifuncional - Solicitação de nova impressora KB0010046{
+A impressora é trocada em caso de necessidade técnica ou quando há determinação da TI,
+uma vez que requer execução de trâmites de compra e aditivo de contrato. Ou seja, 
+se necessária nova impressora devido a algum problema, um chamado deve ser registrado 
+para que a validação técnica seja efetuada.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=b977c5efdb8033c0afa709a0ba96195e
+}
+
+Telefonia fixa - Movimentação de ramal analógico KB0010042{
+Para solicitações de movimentação de ramal analógico: acionar GGL para que encaminhe e-mail para raquel.zillig@dpsp.com.br
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=ca7af063db4cff80afa709a0ba9619a9
+}
+
+Recarga de celular - Valor duplicado KB0010050{
+Para casos de valor duplicado na venda de recarga de celular, é necessário entrar em contato com o time fincanceiro (cartoes@dpsp.com.br).
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=d4398dafdbc033c0afa709a0ba961990
+}
+
+Funcional Card - Informações de acesso KB0010045{
+Para Acesso a página do Funcional Card em filiais DP, seguir os padrões:
+Login: L (maiúsculo) + número da loja – por exemplo, se fosse a loja 1001, o login seria L1001
+Senha: número da loja – no exemplo da loja 1001, a senha seria 1001
+Para Acesso a página do Funcional Card em filiais DSP, seguir os padrões:
+Login: CNPJ da filial
+Senha: Drogaria
+Obs: Caso o acesso a página for feito utilizando a senha "drogaria", será possível acessar normalmente 
+e inclusive emitir autorização mas não será aceita no caixa pois o correto é o acesso utilizando a senha "Drogaria".
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=d5020d63db0033c0afa709a0ba961901
+}
+
+Webmail - Problema com senha de acesso bloqueada KB0010014{
+Caso a senha de acesso ao webmail esteja bloqueada, é necessário apenas aguardar o desbloqueio que ocorre automaticamente após 15 minutos.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=d80b6a2ddb7e27c09bbecf24149619f1
+}
+
+Webmail - Problema com a versão light/alteração de layout KB0010016{
+Para casos de alteração de layout do Webmail para versão antiga, não há a possibilidade, devido à migração para o Office365.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=4cebea6ddb7e27c09bbecf2414961937
+}
+
+Scanner/Leitor cód. de barras - Problema na leitura de produtos KB0010024{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=e161b2c9db8be7009bbecf241496198f
+}
+
+Roubo/furto de equipamentos KB0010002{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=ed85f444db3e23c09bbecf24149619eb
+}
+
+Impressora multifuncional - Solicitação de abastecimento de suprimentos (papel e toner)KB0010006{
+Em necessidade de suprimentos (toner e papel) para impressora multifuncional, deve ser feita solicitação pelo BR Supply, no Portal People.
+Caso não haja a impressora cadastrada no BR Supply para prosseguir com o pedido, o gerente da loja deve entrar em contato com o email suprimentos@otg.com.br solicitando o suprimento.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=e1eabc08db3e23c09bbecf2414961942
+} 
+
+Portal RH/CHRONUS - Problemas e dúvidas KB0010012{
+O Portal RH – Chronus não é administrado por TI, logo, qualquer dúvida ou problema a ele relacionado deve ser reportado diretamente ao RH.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=3e8aaee9db7e27c09bbecf24149619fd
+}
+
+Farmácia Popular - Reimpressão de comprovante de vendas KB0010040{
+Em caso de reimpressão de comprovante de venda de Farmácia Popular (via que o cliente assina),  
+não há possibilidade de reimpressão do comprovante da venda do farmácia popular (via que o cliente assina). 
+Dúvidas contatar GGL da loja.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=2b0eb857db40fb80afa709a0ba9619f2
+}
+
+Peoplesoft - Desbloqueio de senha KB0010049{
+Para usuário de acesso ao PeopleSoft bloqueado: Criar solicitação no caminho seguinte: 
+PeopleSoft - Solicitações Gerais > Solicitação > Ajuste de Perfil de Acesso
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=4ae8c9ebdbc033c0afa709a0ba961945
+}
+
+Loja Inaugurada com Equipamento Faltante KB0010010{
+Toda loja possui uma quantidade pré determinada de equipamentos e a implementação deles é acompanhada de perto pelo time de TI. 
+Não é necessário abrir chamado para informar que algo está faltante, pois isso já é de ciência do time.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=58792ae9db7e27c09bbecf2414961908
+}
+
+Service Now - Como criar comunicado KB0010081{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=650cec92db51bf04afa709a0ba96196d
+}
+
+Checklist - Dúvidas e problemas KB0010008{
+Em caso de problemas técnicos ou dúvidas com a ferramenta Checklist, é necessário acionar o suporte técnico do Checklist fácil:
+
+Telefones: (51) 3030 - 1824/1825/1826
+
+Horário de atendimento: segunda a sexta, das 8h às 20h - horário de Brasília
+Se ncessário auxílio para cadastrar acesso ao sistema Checklist Fácil, o gerente deve enviar e-mail para everton.amorim@dpsp.com.br - responsável pela administração da ferramenta.
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=3adc3848db3e23c09bbecf2414961942
+}
+
+Util{
+Checklist - Dúvidas e problemas 
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=3adc3848db3e23c09bbecf2414961942
+
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=5c35612fdbd32b0008ff1a2f2a961907
+}
+
+}
+
+ServiceNow{
+
+[Gestão de Problemas] - Documentação e treinamento KB0010080{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=0965ade1db11fbc008ff1a2f2a961923
+}
+
+Como monitorar meus chamados no Portal KB0010071{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=3b62a38cdbf47780afa709a0ba96199a
+}
+
+Util Vídeos de Treinamento para utilização do Portal de Serviços KB0010027{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=5c35612fdbd32b0008ff1a2f2a961907
+}
+
+Util Como acessar o ServiceNow - Colaboradores DPSP KB0010051{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=5dd9fb90dbd0370408ff1a2f2a9619b5
+}
+
+Util [Base de Conhecimento] - Como criar um Artigo na Base de Conhecimento KB0010058{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=7461da53db10ff4008ff1a2f2a961991
+}
+
+Util Vídeos de Treinamento para as Áreas Solucionadoras KB0010026{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=a325d16bdbdfe70008ff1a2f2a9619dc
+}
+
+Util Adicionar e Remover colunas nas Listas KB0010055a{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=bab12b4adb90bf0008ff1a2f2a96191b
+}
+
+Util Vídeo de treinamento Relatórios e Dashboards KB0010028{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=c3ca8b4bdbabaf8008ff1a2f2a961969
+}
+
+Util ServiceNow - Problemas com navegadores e anexos KB0010031{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=cd0dea7ddb007f0008ff1a2f2a961931
+}
+
+Util ServiceNow - Criando e editando atalhos/favoritos no menu KB0010029{
+https://dpsp.service-now.com/sp?id=kb_article&sys_id=ec5f8a7ddbccfb0008ff1a2f2a9619b3
+}
+
+}
+
+Procedimento do Script de instalação, configuração do SAT, teclado Gertec e impressora Sweda para o rollout AGILIZA{
+https://unisyscorp.sharepoint.com/teams/6440364/DPSP/Knowledge%20Management/Forms/AllItems.aspx?id=%2Fteams%2F6440364%2FDPSP%2FKnowledge%20Management%2FProcedimentos%20-%20Field%20Services%2FConfiguracao%20do%20SAT_teclado_impressora_sweda%2Epdf&parent=%2Fteams%2F6440364%2FDPSP%2FKnowledge%20Management%2FProcedimentos%20-%20Field%20Services
+}
+
+1ª 2ª 3ª tentiva de contato{
+	
+	
+1ª (Primeira e segunda tentativa de contato)
+o Nessas tentativas de contato, devemos inserir uma nota no chamado através do campo Digite sua mensagem aqui. 
+Segue o script que deve ser adotado e registrado no chamado:
+§ Para solicitações
+Olá [Nome do Usuário], para darmos prosseguimento em sua solicitação, algumas informações se fazem necessárias - [Informar o que está pendente].
+Atenciosamente
+[Evandro]
+
+// Para Incidentes
+Olá [Nome do Usuário], para darmos prosseguimento na resolução de seu problema, 
+algumas informações se fazem necessárias - [Informar o que está pendente].
+Atenciosamente
+[Evandro]
+
+Para Incidentes
+Olá [Nome do Usuário], para darmos prosseguimento na resolução de seu problema, 
+algumas informações se fazem necessárias - [Informar o que está pendente].
+Esse chamado será resolvido por falta de retorno em outras duas tentativas realizadas, 
+entretanto sem resposta. Em 5 dias ele será encerrado e não poderá ser reaberto.
+Atenciosamente
+[Evandro]
+
+3ª Terceira tentativa de contato
+o Nessas tentativas de contato, devemos inserir uma nota no chamado através do campo Digite sua mensagem aqui. 
+Segue o script que deve ser adotado e registrado no chamado:
+§ Para solicitações
+Olá [Nome do Usuário], para darmos prosseguimento em sua solicitação, algumas informações se fazem necessárias - 
+[Informar o que está pendente]. Esse chamado será resolvido por falta de retorno em outras duas tentativas realizadas, 
+entretanto sem resposta. Em 5 dias ele será encerrado e não poderá ser reaberto.
+}
+
+CONTATOS{
+1. Objetivo
+Este procedimento tem como objetivo orientar a equipe do Service Desk referente aos canais de contato que eles receberam chamados no ServiceNow.
+
+2. Notas de Suporte
+N/A.
+
+3. Procedimento Técnico
+Suporte telefônico e Portal do Usuário Portal do Usuário: https://dpsp.service-now.com/sp
+Telefone do Service Desk (Contato externo): 55 11 3429-2420.
+Suporte Especialistas Unisys para apoio do time Service Desk
+
+Seg à Sex das 07hs as 11hs - Horário de Brasilia +55 11 4680-6265.
+Sab, Dom e Feriados das 07hs as 09hs - Horário de Brasília - (Não haverá atendimento após este horário) +55 11 9 9243-4281. 
+Todo terceiro domingo de cada mês: +55 11 9 8075-6495 - Como é o caso deste final de semana (19)
+}
+
+TEMPLATE DE ATENDIMENTO{
+//1	
+Numero loja/ VD:
+Nome completo:
+Cargo:
+Contato - Alm do contato VOIP outro número especfico (Opcional):
+
+Sintomas relatados pelo contato:
+
+Foi pesquisado chamado anterior sobre o tema?
+
+Problema / Solicitação:
+
+
+Troubleshooting:
+ 
+
+//Procedimento consultado/KB: (Caso no tenha procedimento referente 
+//a este assunto informar o campo abaixo com o nãúmero do gap).
+
+Gap: 
+
+//2 
+Numero loja/ VD:
+Nome completo:
+Cargo:
+Contato - Alm do contato VOIP outro número especfico (Opcional):
+
+Sintomas relatados pelo contato:
+
+Foi pesquisado chamado anterior sobre o tema?
+
+Problema / Solicitação:
+
+
+Troubleshooting:
+ 
+
+//Procedimento consultado/KB: (Caso no tenha procedimento referente 
+//a este assunto informar o campo abaixo com o nãúmero do gap).
+
+Gap: 
+}
+
+
+ULTIMO ARQUIVO VISTO{PDV Agiliza - Como coletar o log}
